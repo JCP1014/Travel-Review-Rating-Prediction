@@ -26,7 +26,7 @@
 ### Step 2:
 ![alt text](https://github.com/JCP1014/Travel-Review-Rating-Prediction/blob/master/figure/2.png)  
 左為**先降維**再用**Kmeans**分成5群的結果, 右為自己根據使用者對各組的平均評分所定義的分群
-先降維再分群有分得比較漂亮, 但跟自定義的分群不太像
+先降維再分群有分得比較漂亮, 但跟自定義的分群不太像  
 反覆調整Step1和Step2的參數後都沒有變比較好, 因此決定嘗試改用別的分群方法
 ### Step 3:
 ![alt text](https://github.com/JCP1014/Travel-Review-Rating-Prediction/blob/master/figure/3.png)  
@@ -35,7 +35,7 @@
 左下為**先經降維**再用**MiniBatchKMeans**分成5群的結果, 右為自己根據使用者對各組的平均評分所定義的分群  
 原本只是想看看若用MiniBatchKMeans會有什麼變化,   
 本來以為會分得更不好, 結果意外發現可以分得跟原先定義的分群更像(左上圖比起Step1的圖, 右上角可以分出了兩群, 右下角可以合為一群)      
-MiniBatchKMeans與Kmeans最大的差別是會收斂得更快  
+而MiniBatchKMeans與Kmeans最大的差別是會**收斂得更快**  
 ### Step 4:
 ![alt text](https://github.com/JCP1014/Travel-Review-Rating-Prediction/blob/master/figure/5.png)  
 ![alt text](https://github.com/JCP1014/Travel-Review-Rating-Prediction/blob/master/figure/6.png)  
